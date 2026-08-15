@@ -42,7 +42,7 @@ const Shipping = () => {
         totalPrice,
       };
 
-      const response = await fetch('http://localhost:5000/api/orders', {
+      const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

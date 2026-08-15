@@ -13,7 +13,7 @@ const Feedback = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/feedback');
+      const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/feedback');
       const data = await response.json();
       if (!response.ok) throw new Error(data.message || 'Failed to fetch reviews');
       setReviews(data);
@@ -54,7 +54,7 @@ const Feedback = () => {
 
     try {
       setSubmitting(true);
-      const response = await fetch('http://localhost:5000/api/feedback', {
+      const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

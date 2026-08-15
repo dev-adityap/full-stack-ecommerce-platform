@@ -11,7 +11,7 @@ const AdminOrders = () => {
 
   const fetchAllOrders = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/orders', {
+      const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/orders', {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },
@@ -36,7 +36,7 @@ const AdminOrders = () => {
 
   const deliverHandler = async (orderId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/${orderId}/deliver`, {
+      const response = await fetch(`https://nexusstore-backend-z4v0.onrender.com/api/orders/${orderId}/deliver`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${userInfo.token}`,

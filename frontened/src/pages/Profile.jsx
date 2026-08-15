@@ -35,7 +35,7 @@ const Profile = () => {
 
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/api/users/profile', {
+      const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/users/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ const OrderHistory = () => {
 
     const fetchOrders = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/orders/myorders', {
+        const response = await fetch('https://nexusstore-backend-z4v0.onrender.com/api/orders/myorders', {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,
           },
