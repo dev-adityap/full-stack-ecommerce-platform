@@ -10,7 +10,7 @@ const products = [
     reviewCount: 1245,
     image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800",
     description: "Premium noise-cancelling wireless headphones with immersive sound.",
-    stock: 14,
+    countInStock: 14,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -25,7 +25,7 @@ const products = [
     reviewCount: 2156,
     image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800",
     description: "Premium wireless earbuds with active noise cancellation.",
-    stock: 21,
+    countInStock: 21,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -40,7 +40,7 @@ const products = [
     reviewCount: 634,
     image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800",
     description: "Powerful Android tablet with a vibrant display and premium design.",
-    stock: 9,
+    countInStock: 9,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -55,7 +55,7 @@ const products = [
     reviewCount: 876,
     image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
     description: "Mechanical gaming keyboard with RGB lighting and tactile switches.",
-    stock: 35,
+    countInStock: 35,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -70,7 +70,7 @@ const products = [
     reviewCount: 543,
     image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800",
     description: "Ergonomic wireless mouse designed for productivity and precision.",
-    stock: 27,
+    countInStock: 27,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -85,7 +85,7 @@ const products = [
     reviewCount: 412,
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800",
     description: "4K UHD monitor with vibrant colors and a sleek bezel design.",
-    stock: 13,
+    countInStock: 13,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -100,7 +100,7 @@ const products = [
     reviewCount: 928,
     image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800",
     description: "Portable Bluetooth speaker with powerful sound and deep bass.",
-    stock: 31,
+    countInStock: 31,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -115,7 +115,7 @@ const products = [
     reviewCount: 376,
     image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800",
     description: "Compact action camera built for travel, sports and adventure.",
-    stock: 8,
+    countInStock: 8,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -130,7 +130,7 @@ const products = [
     reviewCount: 1182,
     image: "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800",
     description: "Smart speaker with voice assistant and connected home features.",
-    stock: 42,
+    countInStock: 42,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -145,7 +145,7 @@ const products = [
     reviewCount: 893,
     image: "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800",
     description: "Advanced smartwatch with health, fitness and connectivity features.",
-    stock: 12,
+    countInStock: 12,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -162,7 +162,7 @@ const products = [
     reviewCount: 876,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
     description: "Comfortable lifestyle sneakers with responsive cushioning.",
-    stock: 24,
+    countInStock: 24,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -177,7 +177,7 @@ const products = [
     reviewCount: 734,
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=800",
     description: "High-performance running shoes with responsive cushioning.",
-    stock: 18,
+    countInStock: 18,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -192,7 +192,7 @@ const products = [
     reviewCount: 521,
     image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800",
     description: "Bold retro-inspired sneakers with a comfortable everyday fit.",
-    stock: 29,
+    countInStock: 29,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -207,7 +207,7 @@ const products = [
     reviewCount: 1567,
     image: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=800",
     description: "Iconic low-top sneakers with a timeless clean design.",
-    stock: 32,
+    countInStock: 32,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -222,7 +222,7 @@ const products = [
     reviewCount: 438,
     image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800",
     description: "Classic basketball-inspired sneakers with a modern streetwear look.",
-    stock: 26,
+    countInStock: 26,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -237,7 +237,7 @@ const products = [
     reviewCount: 629,
     image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800",
     description: "Classic everyday sneakers combining comfort and retro styling.",
-    stock: 21,
+    countInStock: 21,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -252,7 +252,7 @@ const products = [
     reviewCount: 932,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800",
     description: "Lightweight running shoes designed for everyday training.",
-    stock: 40,
+    countInStock: 40,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -267,7 +267,7 @@ const products = [
     reviewCount: 315,
     image: "https://images.unsplash.com/photo-1511886929837-354d827aae26?w=800",
     description: "Football boots designed for speed, control and agility.",
-    stock: 17,
+    countInStock: 17,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -282,7 +282,7 @@ const products = [
     reviewCount: 721,
     image: "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800",
     description: "Comfortable casual slides perfect for everyday wear.",
-    stock: 45,
+    countInStock: 45,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -297,7 +297,7 @@ const products = [
     reviewCount: 284,
     image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
     description: "Durable premium boots with a rugged classic outdoor design.",
-    stock: 11,
+    countInStock: 11,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -314,7 +314,7 @@ const products = [
     reviewCount: 1245,
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
     description: "Premium cotton black t-shirt with a comfortable everyday fit.",
-    stock: 58,
+    countInStock: 58,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -329,7 +329,7 @@ const products = [
     reviewCount: 873,
     image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800",
     description: "Elegant floral summer dress with a comfortable lightweight design.",
-    stock: 25,
+    countInStock: 25,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -344,7 +344,7 @@ const products = [
     reviewCount: 532,
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800",
     description: "Classic denim jacket designed for versatile everyday styling.",
-    stock: 19,
+    countInStock: 19,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -359,7 +359,7 @@ const products = [
     reviewCount: 642,
     image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=800",
     description: "Soft oversized hoodie with a relaxed modern fit.",
-    stock: 33,
+    countInStock: 33,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -374,7 +374,7 @@ const products = [
     reviewCount: 918,
     image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800",
     description: "Stretch denim jeans with a modern slim fit.",
-    stock: 37,
+    countInStock: 37,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -389,7 +389,7 @@ const products = [
     reviewCount: 731,
     image: "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=800",
     description: "High-waisted denim jeans with a flattering contemporary fit.",
-    stock: 29,
+    countInStock: 29,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -404,7 +404,7 @@ const products = [
     reviewCount: 294,
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800",
     description: "Tailored formal blazer suitable for business and special occasions.",
-    stock: 12,
+    countInStock: 12,
     featured: false,
     bestSeller: false,
     newArrival: true
@@ -419,7 +419,7 @@ const products = [
     reviewCount: 387,
     image: "https://images.unsplash.com/photo-1564257577054-0e2c2f1e9e8f?w=800",
     description: "Elegant satin blouse with a sophisticated premium finish.",
-    stock: 22,
+    countInStock: 22,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -434,7 +434,7 @@ const products = [
     reviewCount: 526,
     image: "https://images.unsplash.com/photo-1625910513413-5fc45f3a2a2d?w=800",
     description: "Classic polo shirt made from breathable cotton fabric.",
-    stock: 44,
+    countInStock: 44,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -449,7 +449,7 @@ const products = [
     reviewCount: 418,
     image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800",
     description: "Soft knitted sweater designed for warmth and everyday style.",
-    stock: 27,
+    countInStock: 27,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -466,7 +466,7 @@ const products = [
     reviewCount: 892,
     image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800",
     description: "Compact premium wallet with multiple card and cash compartments.",
-    stock: 52,
+    countInStock: 52,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -481,7 +481,7 @@ const products = [
     reviewCount: 621,
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800",
     description: "Spacious everyday backpack with a premium leather finish.",
-    stock: 26,
+    countInStock: 26,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -496,7 +496,7 @@ const products = [
     reviewCount: 473,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800",
     description: "Stylish sunglasses with UV protection and a modern frame.",
-    stock: 38,
+    countInStock: 38,
     featured: true,
     bestSeller: true,
     newArrival: false
@@ -511,7 +511,7 @@ const products = [
     reviewCount: 385,
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800",
     description: "Minimalist watch with a clean dial and comfortable strap.",
-    stock: 24,
+    countInStock: 24,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -526,7 +526,7 @@ const products = [
     reviewCount: 1045,
     image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=800",
     description: "Compact wireless earbuds with clear audio and a portable charging case.",
-    stock: 34,
+    countInStock: 34,
     featured: true,
     bestSeller: true,
     newArrival: true
@@ -541,7 +541,7 @@ const products = [
     reviewCount: 516,
     image: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=800",
     description: "Classic leather belt with a polished metal buckle.",
-    stock: 47,
+    countInStock: 47,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -556,7 +556,7 @@ const products = [
     reviewCount: 329,
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800",
     description: "Spacious duffel bag designed for weekend trips and travel.",
-    stock: 19,
+    countInStock: 19,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -571,7 +571,7 @@ const products = [
     reviewCount: 412,
     image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800",
     description: "Insulated stainless steel bottle that keeps drinks hot or cold.",
-    stock: 63,
+    countInStock: 63,
     featured: false,
     bestSeller: true,
     newArrival: false
@@ -586,7 +586,7 @@ const products = [
     reviewCount: 274,
     image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800",
     description: "Durable canvas backpack with a dedicated laptop compartment.",
-    stock: 31,
+    countInStock: 31,
     featured: true,
     bestSeller: false,
     newArrival: true
@@ -601,7 +601,7 @@ const products = [
     reviewCount: 184,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800",
     description: "Compact protective case designed to safely store sunglasses while travelling.",
-    stock: 55,
+    countInStock: 55,
     featured: false,
     bestSeller: false,
     newArrival: true
