@@ -87,8 +87,9 @@ const ProductDetails = () => {
               <p style={{ color: '#565959', lineHeight: '1.6', fontSize: '1rem' }}>{product.description}</p>
             </div>
 
-            <div style={{ fontSize: '1.1rem', fontWeight: 'bold', color: product.countInStock > 0 ? '#007600' : '#cc0c39', marginBottom: '15px' }}>
-              {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+            {/* Changed from countInStock to stock */}
+            <div style={{ fontSize: '1.1rem', fontWeight: 'bold', color: product.stock > 0 ? '#007600' : '#cc0c39', marginBottom: '15px' }}>
+              {product.stock > 0 ? 'In Stock' : 'Out of Stock'}
             </div>
           </div>
 
@@ -101,7 +102,8 @@ const ProductDetails = () => {
               FREE delivery available.
             </div>
 
-            {product.countInStock > 0 && (
+            {/* Changed from countInStock to stock */}
+            {product.stock > 0 && (
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
                 <span style={{ fontWeight: 'bold' }}>Quantity:</span>
                 <select 
@@ -109,7 +111,7 @@ const ProductDetails = () => {
                   onChange={(e) => setQty(Number(e.target.value))}
                   style={{ padding: '8px 12px', borderRadius: '6px', border: '1px solid #d5d9d9', outline: 'none', fontWeight: 'bold', cursor: 'pointer' }}
                 >
-                  {[...Array(product.countInStock).keys()].map((x) => (
+                  {[...Array(product.stock).keys()].map((x) => (
                     <option key={x + 1} value={x + 1}>{x + 1}</option>
                   ))}
                 </select>
@@ -117,18 +119,19 @@ const ProductDetails = () => {
             )}
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {/* Changed from countInStock to stock */}
               <button 
                 onClick={addToCartHandler}
-                disabled={product.countInStock === 0}
-                style={{ width: '100%', padding: '12px', backgroundColor: product.countInStock === 0 ? '#ccc' : '#ffd814', border: '1px solid #fcd200', borderRadius: '8px', cursor: product.countInStock === 0 ? 'not-allowed' : 'pointer', fontWeight: 'bold' }}
+                disabled={product.stock === 0}
+                style={{ width: '100%', padding: '12px', backgroundColor: product.stock === 0 ? '#ccc' : '#ffd814', border: '1px solid #fcd200', borderRadius: '8px', cursor: product.stock === 0 ? 'not-allowed' : 'pointer', fontWeight: 'bold' }}
               >
                 Add to Cart
               </button>
 
               <button 
                 onClick={buyNowHandler}
-                disabled={product.countInStock === 0}
-                style={{ width: '100%', padding: '12px', backgroundColor: product.countInStock === 0 ? '#ccc' : '#ffa41c', border: '1px solid #ff8f00', borderRadius: '8px', cursor: product.countInStock === 0 ? 'not-allowed' : 'pointer', fontWeight: 'bold' }}
+                disabled={product.stock === 0}
+                style={{ width: '100%', padding: '12px', backgroundColor: product.stock === 0 ? '#ccc' : '#ffa41c', border: '1px solid #ff8f00', borderRadius: '8px', cursor: product.stock === 0 ? 'not-allowed' : 'pointer', fontWeight: 'bold' }}
               >
                 Buy Now
               </button>
