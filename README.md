@@ -185,3 +185,68 @@ full-stack-ecommerce-platform/
 ├── .gitignore
 ├── vite.config.js
 └── README.md
+⚙️ Installation
+1. Clone the repository
+git clone https://github.com/dev-adityap/full-stack-ecommerce-platform.git
+2. Navigate into the project
+cd full-stack-ecommerce-platform
+🔧 Backend Setup
+
+Navigate to the backend directory:
+
+cd backened
+
+Install dependencies:
+
+npm install
+
+Create a .env file inside the backened directory:
+
+PORT=5000
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret
+🗄️ MongoDB Setup
+
+This project uses MongoDB Atlas as the cloud database.
+
+Create a MongoDB Atlas account.
+Create a free MongoDB cluster.
+Create a database user.
+Configure network access.
+Copy your MongoDB connection string.
+Add it to the backend .env file.
+
+Example:
+
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/nexusstore
+
+Do not use the example credentials above.
+
+▶️ Run the Backend
+
+Inside the backened directory:
+
+npm start
+
+The backend runs on:
+
+http://localhost:5000
+💻 Frontend Setup
+
+Open another terminal and navigate to:
+
+cd frontened
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+The frontend will be available at:
+
+http://localhost:5173
+
+
